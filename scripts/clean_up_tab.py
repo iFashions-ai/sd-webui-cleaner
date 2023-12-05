@@ -51,7 +51,7 @@ def on_ui_tabs():
 
                     with gr.Column(elem_id=f"cleanup_gallery_container"):
 
-                        clean_button = gr.Button("Clean Up", height=100)
+                        clean_button = gr.Button("Clean Up")
                         result_gallery = gr.Gallery(
                             label='Output', show_label=False, elem_id=f"cleanup_gallery", preview=True, height=512)
 
@@ -69,7 +69,7 @@ def on_ui_tabs():
                                     paste_field_names=[]
                                 ))
 
-                        send_to_cleaner_button = gr.Button("Send back To clean up", height=100)
+                        send_to_cleaner_button = gr.Button("Send back To clean up")
 
 
                         if tab_name == "Clean up":
